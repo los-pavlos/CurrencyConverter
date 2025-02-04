@@ -1,0 +1,35 @@
+﻿<Window x:Class="CurrencyConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Konvertor měn" Height="300" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- amount -->
+        <TextBlock Text="Částka:" VerticalAlignment="Center"/>
+        <TextBox x:Name="AmountBox" Grid.Row="0" Grid.Column="1" Width="200" Height="30" Margin="10,0,0,0"/>
+
+        <!-- from currency -->
+        <TextBlock Text="Z měny:" Grid.Row="1" VerticalAlignment="Center"/>
+        <ComboBox x:Name="FromCurrency" Grid.Row="1" Grid.Column="1" Width="200" Margin="10,0,0,0"/>
+
+        <!-- to currency -->
+        <TextBlock Text="Na měnu:" Grid.Row="2" VerticalAlignment="Center"/>
+        <ComboBox x:Name="ToCurrency" Grid.Row="2" Grid.Column="1" Width="200" Margin="10,0,0,0"/>
+
+        <!-- button for conversion -->
+        <Button Content="Převést" Grid.Row="3" Grid.ColumnSpan="2" Width="100" Height="30"
+                HorizontalAlignment="Center" Click="ConvertButton_Click"/>
+
+
+        <!-- Calculation -->
+        <TextBlock x:Name="ResultText" Grid.Row="4" Grid.ColumnSpan="2" FontSize="16" FontWeight="Bold"
+                   HorizontalAlignment="Center" Margin="10"/>
+    </Grid>
+</Window>
