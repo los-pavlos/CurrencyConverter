@@ -15,7 +15,7 @@ Jednoduchá WPF aplikace pro převod měn pomocí API **Frankfurter.app**.
 ## 🚀 Instalace
 1. Naklonujte repozitář:
    ```sh
-   git clone [https://github.com/uzivatel/currency-converter.git](https://github.com/los-pavlos/CurrencyConverter.git)
+   git clone https://github.com/los-pavlos/CurrencyConverter.git
    cd currency-converter
    ```
 2. Otevřete projekt ve **Visual Studio**.
